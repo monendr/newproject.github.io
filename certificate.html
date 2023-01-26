@@ -1,0 +1,41 @@
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Caste/Income Certificate Application</title>
+  <link rel="stylesheet" href="certificate.css">
+</head>
+<body><div id="certificate">
+  <h1>Caste/Income Certificate Application</h1>
+  <form id="application-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required><br>
+    <div id="name-error" class="error"></div>
+    <label for="address">Address:</label>
+    <input type="text" id="address" required><br>
+    <div id="address-error" class="error"></div>
+    <label for="income">Income:</label>
+    <input type="number" id="income" min="0" required><br>
+    <div id="income-error" class="error"></div>
+    <label for="caste">Caste:</label>
+    <input type="text" id="caste" required><br>
+    <div id="caste-error" class="error"></div>
+    <label for="documents">Upload supporting documents:</label>
+    <input type="file" id="documents" accept=".pdf,.jpg,.jpeg,.png" required><br>
+    <div id="documents-error" class="error"></div>
+    <label for="proof1">Upload Proof of Identity (Aadhar Card):</label>
+    <input type="file" id="proof1" name="proof1" accept="application/pdf" required><br><br>
+    
+    <label for="proof2">Upload Proof of Income (Salary Slip/ITR):</label>
+    <input type="file" id="proof2" name="proof2" accept=".pdf,.jpeg,.jpg" required><br><br>
+    
+    <label for="proof3">Upload Caste Certificate:</label>
+    <input type="file" id="proof3" name="proof3" accept=".pdf,.jpeg,.jpg" required><br><br>
+    <input type="submit" value="Submit">
+  </form>
+  <div id="status"></div>
+</div>
+</body>
+<script src="certificate.js"></script>
+</html>
+
